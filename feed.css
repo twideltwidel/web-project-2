@@ -1,0 +1,542 @@
+/* Edan-Shapira-322533084-Roy-Ohayon-211451661 */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* ----------- by element ----------- */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000;
+}
+
+ol li:first-of-type{
+    padding-left: 2%;
+    margin-right: 30%;
+    background-color: rgb(222, 222, 222);
+    border-radius: 10px;
+    list-style-image: url("icons\\home.svg");
+}
+ol li:nth-of-type(2){
+    list-style-image: url("icons\\search.svg");
+    padding-left: 2%;
+    margin-right: 30%;
+}
+ol li:nth-of-type(3){
+    list-style-image: url("icons\\bell.svg");
+    padding-left: 2%;
+    margin-right: 30%;
+}
+ol li:nth-of-type(4){
+    list-style-image: url("icons\\envelope.svg");
+    padding-left: 2%;
+    margin-right: 30%;
+}
+ol li:nth-of-type(5){
+    list-style-image: url("icons\\grok.svg");
+    padding-left: 2%;
+    margin-right: 30%;
+}
+ol li:nth-of-type(6){
+    list-style-image: url("icons\\lists.svg");
+    padding-left: 2%;
+    margin-right: 30%;
+}
+ol li:nth-of-type(7){
+    list-style-image: url("icons\\bookmark-empty.svg");
+    padding-left: 2%;
+    margin-right: 30%;
+}
+ol li:nth-of-type(8){
+    list-style-image: url("icons\\jobs.svg");
+    padding-left: 2%;
+    margin-right: 30%;
+}
+ol li:nth-of-type(9){
+    list-style-image: url("icons\\people.svg");
+    padding-left: 2%;
+    margin-right: 30%;
+}
+ol li:nth-of-type(10){
+    list-style-image: url("icons\\x_logo.svg");
+    padding-left: 2%;
+    margin-right: 30%;
+}
+ol li:nth-of-type(11){
+    list-style-image: url("icons\\bolt.svg");
+    padding-left: 2%;
+    margin-right: 20%;
+}
+ol li:nth-of-type(12){
+    list-style-image: url("icons\\person-outline.svg");
+    padding-left: 2%;
+    margin-right: 30%;
+}
+ol li:nth-of-type(13){
+    list-style-image: url("icons\\more.svg");
+    padding-left: 2%;
+    margin-right: 30%;
+}
+
+/* ----------- by class ----------- */
+.hidden {
+  display: none !important;
+}
+
+.header{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    padding: relative;
+    min-width: 1000px;
+}
+.main{
+    background-color: black;
+    display: flex;
+    height: 150%;
+    width: 100%;
+    min-height: 1000px;
+    min-width: 1000px;
+}
+
+.logo{
+    filter: invert(1);
+    padding-left: 40%;
+    padding-top: 4%;
+}
+
+.navlist{
+    margin-top: 10px;
+    margin-left: 40%;
+    font-size: large;
+    filter: invert(1);
+}
+.navlist:hover {
+    text-decoration: underline;
+}
+
+.trending{
+    width: 75%;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid rgba(211, 211, 211, 0.452);
+    border-radius: 10px;
+}
+.trending-title{
+    margin-top: 7px;
+    margin-left: 7px;
+}
+.trending-obj{
+    margin-left: 10px;
+}
+.trending-obj:hover {
+    text-decoration: underline;
+    color: white;
+}
+.trending-origin{
+    margin: 0px;
+}
+
+.graytext{
+    color: rgba(211, 211, 211, 0.452);
+}
+.aw-text{
+    font-weight: lighter;
+    margin:0;
+    padding:0;
+}
+.activate-windows{
+    color: rgba(211, 211, 211, 0.479);
+    position: fixed;
+    font-size: smaller;
+    font-weight: lighter;
+    margin:0;
+    padding:0;
+    right: 20px;
+    bottom: 20px;
+}
+
+.post{
+    border: 0.2px solid rgba(211, 211, 211, 0.452);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 3%;
+}
+.new-post{
+    display: flex;
+}
+.new-post-text{
+    width: 100%;
+    height: 100%;
+}
+.post-textarea{
+    background-color: black;
+    border: none;
+}
+.post-buttons{
+    display: flex;
+    align-items: center;
+}
+.post-button{
+    right: 10px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    height: 20px;
+    padding-bottom: 25px;
+}
+
+.like-btn{
+    width: 12px;
+    height: 12px;
+    background: url('icons/heart.png') no-repeat center center;
+    filter: invert(0.5); 
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+.like-btn[disabled] {
+  width: 12px;
+  height: 12px;
+  background: url('icons/heart-red.png') no-repeat center center;
+  background-size: contain;
+  border: none;
+  filter: invert(0);
+}
+.like-btn.liked {
+  width: 12px;
+  height: 12px;
+  background: url('icons/heart-red.png') no-repeat center center;
+  background-size: contain;
+  border: none;
+  filter: invert(0);
+}
+
+.back-button{
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    height: 35px;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+.pop-animation {
+  animation: pop 0.5s ease;
+}
+
+.analytics-counts{
+    padding-right: 15%;
+    padding-bottom: 5px;
+}
+.analytics-btn{
+    padding-right: 15px;
+}
+.comment-btn{
+    width: 12px;
+    height: 12px;
+    background: url('icons/comment.png') no-repeat center center;
+    filter: invert(0.5);
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+.retweet-btn{
+    width: 12px;
+    height: 12px;
+    background: url('icons/retweet.png') no-repeat center center;
+    filter: invert(0.5);
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+.engage-btn{
+    width: 12px;
+    height: 12px;
+    background: url('icons/engage-bar.png') no-repeat center center;
+    filter: invert(0.5);
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+.mention-hashtag{
+    color: lightskyblue;
+}
+.mention-hashtag:hover {
+    text-decoration: underline;
+}
+.grayname{
+    font-size: 12px;
+}
+.poster-name{
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.poster-name:hover {
+    text-decoration: underline;
+}
+.post-text{
+    font-size: 13px;
+    padding-left: 10px;
+    padding-bottom: 1%;
+}
+.analytics-bar{
+    display: flex;
+    margin-left: 8%;
+    font-size: 12px;
+}
+.analytics-icon{
+    width: 12px;
+    height: 12px;
+    filter: invert(1);
+}
+.post-img{
+    max-width: 100%;
+    max-height: 300px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    border: 0.2px solid rgba(211, 211, 211, 0.452);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+.inner-post{
+    display: flex;
+}
+.pfp{
+    height: 28px;
+    width: 28px;
+    border-radius: 200px;
+    margin-right: 4px;
+}
+.center-pane{
+    border: 1px solid rgba(211, 211, 211, 0.452);
+    border-bottom: 0px;
+}
+.left-pane, .right-pane, .center-pane{
+    width: 33%;
+    height: 100%;
+    background-color: black;
+}
+.search{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    width: 75%;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+    color: lightgray;
+}
+.text{
+    color: white;
+}
+.header-box{
+    background-color: black;
+    width: 33%;
+}
+.highlight {
+  animation: highlightFlash 1s ease;
+}
+@keyframes highlightFlash {
+  0% {
+    background-color: #0057a3;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.delete-btn {
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    background: transparent;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+.share-btn {
+    width: 12px;
+    height: 15px;
+    margin-left: 5px;
+    background: url('icons/share.png') no-repeat center center;
+    filter: invert(0.5);
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+.share-popup {
+  position: absolute;
+  background-color: #000000;
+  color: white;
+  border: 1px solid rgba(211, 211, 211, 0.452);
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.share-popup button {
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* ----------- by ID ----------- */
+#fytext{
+    height: 90%;
+    margin-bottom: 0px;
+}
+#fyline{
+    margin: 0px;
+    border-bottom: 10px solid rgb(83, 175, 255);
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+    border-radius: 10px;
+}
+#themeToggle {
+    position: fixed;
+    bottom: 150px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    background: url('icons/sun.png') no-repeat center center;
+    filter: invert(1);
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+#scroll-btn {
+    position: fixed;
+    display: none;
+    bottom: 150px;
+    right: 150px;
+    width: 100px;
+    height: 50px;
+    filter: invert(1);
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+#imageInput{
+    display: none;
+    width: 22px;
+    height: 22px;
+}
+#imageUploadBtn{
+    width: 22px;
+    height: 22px;
+    padding-left: 20px;
+    background: url('icons/img.png') no-repeat center center;
+    filter: invert(0);
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+#tcd {
+    border: 1px solid rgba(211, 211, 211, 0.452);
+    border-top: 0px;
+    display: flex;
+}
+#tcdr, #tcdl{
+    padding-top: 2%;
+    width: 50%;
+    text-align: center;
+}
+#htmltag, #bodytag{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+/* ----------- light mode css ----------- */
+body.light-mode .search {
+  background-color: #ffffff;
+  color: #000;
+}
+body.light-mode #themeToggle{
+    background: url('icons/moon.png') no-repeat center center;
+    background-size: contain;
+    filter: invert(0);
+}
+body.light-mode .graytext {
+  color: rgba(60, 60, 60, 0.432);
+}
+body.light-mode .main {
+  background-color: #ffffff;
+}
+body.light-mode .left-pane,
+body.light-mode .right-pane,
+body.light-mode .center-pane {
+  background-color: #ffffff;
+}
+body.light-mode .text {
+  color: #000;
+}
+body.light-mode .navlist {
+  filter: invert(0);
+}
+body.light-mode .header {
+  background-color: #ffffff;
+  color: #000;
+}
+body.light-mode .header-box {
+  background-color: #ffffff;
+  color: #000;
+}
+body.light-mode .post {
+  background-color: #ffffff;
+  border-color: #ccc;
+}
+body.light-mode .post.highlight {
+  background-color: #b2dfff; 
+}
+body.light-mode .post-textarea {
+  background-color: #ffffff;
+  color: black;
+}
+body.light-mode .mention-hashtag {
+  color: #007acc;
+}
+body.light-mode .like-btn {
+  filter: invert(0);
+}
+body.light-mode .like-btn[disabled],
+body.light-mode .like-btn.liked {
+  background: url('icons/heart-red.png') no-repeat center center;
+  background-size: contain;
+}
+body.light-mode .comment-btn,
+body.light-mode .retweet-btn,
+body.light-mode .engage-btn {
+  filter: invert(0.3);
+}
+body.light-mode .logo {
+  filter: invert(0);
+}
+body.light-mode .back-button {
+  filter: invert(1);
+}
+body.light-mode #scroll-btn {
+  filter: invert(0);
+}
+body.light-mode .share-popup {
+  filter: invert(1);
+}
