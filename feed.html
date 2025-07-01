@@ -59,22 +59,20 @@
             </div>
           </div>
         </div>
-        <div>
+        <div id="postFeed"></div>
+        <div id="postDetail" class="hidden"></div>
+        <template id="postTemplate">
           <div class="post">
             <div class="inner-post">
-              <img class="pfp" src="icons/g1.png" alt="">
+              <img class="pfp" src="" alt="">
               <div>
-                <h6 class="text poster-name">
-                  ILOVECATS <span>&#128179;</span>
-                  <span class="graytext grayname">@catlover69</span>
-                </h6>
-                <p class="text post-text">
-                  I HECKING LOVE CATS!!!!
-                  <span class="mention-hashtag">#CATSARELOVECATSARELIFE</span>
+                <p class="text poster-name">
+                  <span class="name">name</span> <span>&#128179;</span> <span class="graytext grayname handle">handle</span>
                 </p>
+                <p class="text post-text">post-text</p>
               </div>
             </div>
-            <img class="post-img" src="icons/cati.png" alt="">
+            <img class="post-img hidden" src="" alt="">
             <div class="analytics-bar graytext">
               <button class="comment-btn analytics-btn"></button>
               <span class="comment-count analytics-counts">0</span>
@@ -88,33 +86,13 @@
               <button class="delete-btn analytics-btn">🗑️</button>
             </div>
           </div>
-          <div class="post">
-            <div class="inner-post">
-              <img class="pfp" src="icons/g2.png" alt="">
-              <div>
-                <h6 class="text poster-name">
-                  master of cats <span>&#128179;</span>
-                  <span class="graytext grayname">@catlober420</span>
-                </h6>
-                <p class="text post-text">
-                  <span class="mention-hashtag">@catlover69</span> is a scam and a fraud. if he really likes cats he would post a real cat and not this ugly cartoon cat, i wouldnt be surprised if he had a pro-dog propaganda account. i only post real cats
-                </p>
-              </div>
-            </div>
-            <img class="post-img" src="icons/catr.png" alt="">
-            <div class="analytics-bar graytext">
-              <button class="comment-btn analytics-btn"></button>
-              <span class="comment-count analytics-counts">0</span>
-              <button class="retweet-btn analytics-btn"></button>
-              <span class="retweet-count analytics-counts">0</span>
-              <button class="like-btn analytics-btn"></button>
-              <span class="like-count analytics-counts">0</span>
-              <button class="engage-btn analytics-btn"></button>
-              <span class="engage-count analytics-counts">0</span>
-              <button class="share-btn analytics-btn"></button>
-              <button class="delete-btn analytics-btn">🗑️</button>
-            </div>
-          </div>
+        </template>
+        <div id="sharePopup" class="share-popup" style="display: none;">
+          <button class="share-option">Copy Link</button>
+          <button class="share-option">Share post via...</button>
+          <button class="share-option">Send via Direct Message</button>
+          <button class="share-option">Post Video</button>
+          <button class="share-option">Download video</button>
         </div>
       </div>
       <div class="right-pane">
@@ -137,10 +115,11 @@
             <p class="text"><b>the jews</b></p>
           </div>
         </div>
+        <button id="themeToggle" class="btn btn-secondary"></button>
+        <button id="scroll-btn" title="Go to top">Back to top ↑</button>
       </div>
       <div class="activate-windows">
-        <h5 class="aw-text">activate Windows</h5>
-        <!-- thought it was funny:) -->
+        <h5 class="aw-text">activate Windows</h5> <!-- thought it was funny:) -->
         <p>Go to settings to activate Windows.</p>
       </div>
     </main>
