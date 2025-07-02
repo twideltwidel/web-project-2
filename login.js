@@ -1,3 +1,4 @@
+// Edan-Shapira-322533084-Roy-Ohayon-211451661
 document.addEventListener("DOMContentLoaded", () => {
     const firstScreen = document.getElementById('firstScreen');
     const secondScreen = document.getElementById('secondScreen');
